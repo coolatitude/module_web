@@ -74,19 +74,29 @@ function getCookie(cname) {
 function customjoin(array)
 {
 	var l = "";
-	for (let x of array)
-	{
-		console.log(x);
-		l = l + x + " ";
-	}
+	for (let x = 0; x < array.length; x++)
+		l = l + array[x] + ".";
 	l = l.slice(0, l.length - 1);
 	return (l);
+}
+
+function show_menu(pgs)
+{
+	var menu = $("#top-menu");
+	for (let x = 0; x < pgs.length; x++)
+	{
+		if (pgs[x] == 1)
+		{
+			let n = $('<img>', {src: imgpath + menu_pages[x].image});/////////////////////////////////////
+			menu.append(n);
+		}
+			menu.append($('<a'))
+	}
 }
 
 var visited;
 
 function main() {
-	console.log(window.location.pathname.slice(1).split(".html")[0]);
     visited = getCookie("visited");
     if (visited == "")
     {
@@ -94,11 +104,9 @@ function main() {
     		visited = visited + "0" + ".";
     	visited = visited + "0";
     }
-    console.log(visited);
     visited = visited.split(".");
     visited[pages.indexOf(
-    	window.location.pathname.slice(1))] = 1;
-    visited["lol"] = 1;
+    	window.location.pathname.slice(1).split(".html")[0])] = 1;
     setCookie("visited", customjoin(visited));
     var menu = $("#top-menu");
     //n.append(jQuery('<img>',{src: homeurl, class: "attendanceEdit", alt: "edit"}));
