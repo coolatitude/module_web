@@ -1,0 +1,144 @@
+page 0:
+
+Hello,
+I am Archimedes
+I will be your guide in the world of the Web
+It starts here....
+
+page 1:
+
+First, the basics!
+"HTML is the background."
+Let's try it!
+
+Observe the code and the result carefully.
+
+Then, try for example:
+to modify the title
+to change the title tag "h3" to "h1".
+to add a sentence
+to change the page to which the link refers
+add a button ('button' tag)
+
+With each change you make in the code, you will need to click on the'refresh' arrow to see the result
+
+Be careful, if you refresh the page, all your changes in the code will disappear.
+
+HTML
+Result
+Archimedes, this hero
+
+Archimedes is the true spiritual master of Merlin. Without him, Merlin would be nothing.
+
+He occasionally tries to educate Mosquitoes. But this kid doesn't understand anything about anything.
+
+Humans are infuriating.
+
+Even if they are sometimes hilarious....
+Simple, isn't it?
+
+page 2:
+
+First, the basics!
+"CSS is the form"
+Let's try it!
+
+Observe the code and the result carefully.
+
+Then, try for example:
+change the color of the text
+change the background color of the title
+to underline only the 2nd sentence
+to center the text
+to restore Archimedes to the place (see the property'transform')
+
+With each change you make in the code, you will need to click on the'refresh' arrow to see the result
+
+Be careful, if you refresh the page, all your changes in the code will disappear.
+
+HTML
+CSS
+Result
+Archimedes, this hero
+
+Archimedes is the true spiritual master of Merlin. Without him, Merlin would be nothing.
+
+He occasionally tries to educate Mosquitoes. But this kid doesn't understand anything about anything.
+
+HUMANS ARE INFURIATING.
+
+Even if they are sometimes hilarious....
+
+page 3:
+
+Now let's play!
+We will play the game of the 7 differences:
+the example is on the right. And the left part is for you.
+Make sure that your result is the same as the example!
+HTML
+CSS
+Result
+Archimedes is
+finest
+loudest
+largest
+most intelligent
+funniest
+
+but most of all, he doesn't like water!
+
+Original
+Archimedes is
+finest
+loudest
+largest
+most intelligent
+the best
+
+BUT MOST OF ALL, HE DOESN'T LIKE WATER!
+
+page 4:
+
+Shake it up!
+You haven't seen anything in CSS yet.
+Look for a little bit on the side of animations and transitions in CSS....
+HTML
+CSS
+Result
+The loving squirrel & the fleeing mosquito
+Example: Example
+The loving squirrel & the fleeing mosquito
+
+page 5:
+
+Harder, better, stronger!
+Well, it's time now to get out of google chrome, and create/edit your HTML and CSS files directly...
+
+
+
+Open the small_bain_web folder on the desktop of your workstation.
+You will find the files 19.html and 19.css, and some more images.
+
+Open these files 19.html and 19.css with Sublim Text, by dragging the small_bain_web folder over this icon in applications.
+(Sublim Text is a text editor, like Word or Open Office, but specifically for code. There are others, but why not him?)
+
+
+You can now write html code in 19.html, where indicated, and css in 19.css
+To make it easier for you if you want to include images, we have already provided some of them.
+
+
+To view your work, it's easy: double-click on 19.html, the file will open in a web browser.
+Each time you modify any of the 19.html or 19.css files, you only need to refresh the page in the browser.
+
+
+A tip: on your web page in the browser: right click, then "Inspect
+The browser console will open.
+And you can see all your code and modify it!
+You will see the changes live on your page, which is very convenient for working.
+But be careful, these changes are temporary and will disappear at the next page refresh.
+Don't forget to copy and paste these temporary changes into your 19.html and 19.css files to save them.
+
+
+
+
+You have carte blanche, be creative, enjoy yourself!

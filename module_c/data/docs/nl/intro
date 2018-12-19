@@ -1,0 +1,36 @@
+Oh nee ! Het blijkt dat Archimede de uil vast zit in een doolhof.
+Ze heeft jouw hulp nodig om er veilig uit te raken !
+              
+Zou jij haar kunnen helpen ?
+              
+Het is niet zo moeilijk, schrijf simpele instructies dat ze stap voor stap
+kan volgen.
+              
+ 
+ 
+Ter informatie, ze verstaat alleen C programmeer taal... Oei, je kent
+er niks van ? Dan hoop ik dat je maar snel leer !
+              
+ 
+ 
+ 
+Voor elk niveau van dit spel ga je een aantal stappen moeten volgen :
+ 
+	- Kijken naar de het niveau
+	- De instructies schrijven in de 'editcode' bestand
+	- Proberen en testen
+	- Instructies opnieuw schrijven of verbeteren (Zou wat saai zijn als het de
+		eerste keer lukt, nee ?)
+	- Code opnieuw proberen
+	- ...
+	- Heeft archimede een weg naar de uitgang gevonden ? Fantastisch, dan mag je
+		naar het volgende niveau.
+ 
+Om dit te kunnen doen ga je een aantal commandos in de terminal moeten schrijven
+(Je weet wel, dat leelijk zart venster waar je enkel in het wit kan schrijven).
+De eerste die je gaat leren is:
+ 
+	howtoplay
+ 
+Tijd om deze commando uit te proberen. Verlaat deze introductie door op Q te
+drukken. Schrijf daarna howtoplay en druk enter.

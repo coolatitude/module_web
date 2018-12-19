@@ -1,0 +1,36 @@
+
+							|=====================================|
+							|   Nombre de lignes autorisées : ∞   |
+							|=====================================|
+
+
+Est-ce que tu as une bonne mémoire ?
+Archimede oui. (Evidemment ! C'est Archimede.)
+
+Tu peux lui demander de garder des choses en mémoire en utilisant les VARIABLES.
+Les variables sont des sortes de conteneurs qui peuvent contenir une
+information (un nombre, un caractère, des données binaires, etc...)
+
+D'abord, tu dois lui donner le nom de ta variable. C'est ce qu'on appelle
+la DÉCLARATION DE VARIABLE, et tu peux le faire comme ceci :
+
+	int ma_super_variable;
+
+Un nom de variable doit toujours commencer par une lettre, et ne doit contenir
+que des lettres majuscules et minuscules, des chiffres, et des underscores (_).
+
+Tu dois ensuite lui donner une valeur. C'est la partie la plus fun.
+
+	ma_super_variable = 19;
+
+Et BAM, ma_super_variable contient maintenant le meilleur nombre du monde !
+Tu peux aussi utiliser les variables dans des fonctions, comme ceci :
+
+	fonction_geniale (ma_super_variable);
+
+Tu vas en découvrir un exemple dans le code de ce niveau.
+
+
+
+
+Appuie sur Q pour quitter.

@@ -1,0 +1,11 @@
+Vous avez appris ceci pour le moment:
+
+'back' : Vous ramenera chez Artemis devant le portail.
+
+'executables' : les executables sont des programmes que vous pouvez utiliser avec './'. 
+Ils sont en bleu.
+
+'dossiers' : les dossiers contiennent des executables, des sous-dossiers et bien d'autres fichiers.
+Ils sont en vert.
+
+'./' : Vous permet d'executer un executable. Dans ce cas, il vous permet d'interagir avec des objets et des personnages.

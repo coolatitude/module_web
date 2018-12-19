@@ -1,0 +1,33 @@
+
+											|======================================|
+											|   Nombre de lignes autorisées : 16   |
+											|======================================|
+
+Archimede a l'impression de toujours faire les mêmes actions... Peut être y
+a-t-il un moyen de ne lui dire qu'une seule fois ce qu'elle doit effectuer
+plusieurs fois ... ?
+
+				|====================================================================|
+				|                                                                    |
+				| Rappel : Les boucles                                               |
+				|                                                                    |
+				|   while (condition)                                                |
+				|   {                                                                |
+				|     code à répéter tant que la condition est vraie                 |
+				|   }                                                                |
+				|                                                                    |
+				|====================================================================|
+
+				|====================================================================|
+				|                                                                    |
+				| Rappel 2 : L'incrémentation est une conditions facile pour les     |
+				|            boucles                                                 |
+				|                                                                    |
+				|   int variable;                                                    |
+				|   variable = variable + 1;                                         |
+				|                                                                    |
+				|====================================================================|
+
+
+
+Appuie sur Q pour quitter.

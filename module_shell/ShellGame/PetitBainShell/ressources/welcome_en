@@ -1,0 +1,29 @@
+ /$$      /$$  /$$$$$$  /$$$$$$$  /$$   /$$ /$$       /$$$$$$$$        /$$$$$$  /$$   /$$ /$$$$$$$$ /$$       /$$
+| $$$    /$$$ /$$__  $$| $$__  $$| $$  | $$| $$      | $$_____/       /$$__  $$| $$  | $$| $$_____/| $$      | $$
+| $$$$  /$$$$| $$  \ $$| $$  \ $$| $$  | $$| $$      | $$            | $$  \__/| $$  | $$| $$      | $$      | $$
+| $$ $$/$$ $$| $$  | $$| $$  | $$| $$  | $$| $$      | $$$$$         |  $$$$$$ | $$$$$$$$| $$$$$   | $$      | $$
+| $$  $$$| $$| $$  | $$| $$  | $$| $$  | $$| $$      | $$__/          \____  $$| $$__  $$| $$__/   | $$      | $$
+| $$\  $ | $$| $$  | $$| $$  | $$| $$  | $$| $$      | $$             /$$  \ $$| $$  | $$| $$      | $$      | $$
+| $$ \/  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$/| $$$$$$$$| $$$$$$$$      |  $$$$$$/| $$  | $$| $$$$$$$$| $$$$$$$$| $$$$$$$$
+|__/     |__/ \______/ |_______/  \______/ |________/|________/       \______/ |__/  |__/|________/|________/|________/
+
+
+
+
+
+
+Hello and welcome to 19!
+
+In this game, you will travel through the castle and solve riddles.
+Those riddles will lead you to learn basic shell commands!
+In other words, you will learn how to navigate your computer,
+how to create files, suppress them and copy them, and much more!
+
+Please write 'start' in your terminal to begin!
+
+To interact with characters or various objects,
+you just have to type './' followed by the character's or the item's name.
+'./' is actually how to execute an executable.
+You can try here! Artemis should be around. Try writing : './artemis'.
+If you need help at any time you can just write 'shelp'.
+And if you got lost you can just write 'back' to come back here.

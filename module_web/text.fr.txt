@@ -1,0 +1,145 @@
+﻿page 0:
+
+Bonjour,
+mon nom est Archimède
+Je serai votre guide dans le monde du Web
+Ça commence ici...
+
+page 1:
+
+D'abord, les bases !
+“le HTML, c'est le fond”
+Essayons !
+
+Observe bien le code et le résultat.
+
+Puis, essaie par exemple :
+de modifier le titre
+de changer la balise de titre de "h3" en "h1"
+d'ajouter une phrase
+de changer la page à laquelle le lien renvoie
+d'ajouter un bouton (balise 'button')
+
+À chaque changement que tu feras dans le code, il te faudra cliquer sur la flèche 'refresh' pour voir le résultat
+
+Attention, si tu rafraîchis la page, toutes tes modifications dans le code disparaîtront.
+
+HTML
+Résultat
+
+Archimède, c'est un héros
+
+Archimède est le véritable maître spirituel de Merlin. Sans lui, Merlin ne serait rien.
+
+Il tente à l'occasion d'éduquer Moustique. Mais ce gamin ne comprend rien à rien.
+
+Les humains sont furieux.
+
+Même si ils sont parfois hilarants...
+Simple, non ?
+
+page 2:
+
+D'abord, les bases !
+“le CSS, c'est la forme”
+Essayons !
+
+Observe bien le code et le résultat.
+
+Puis, essaie par exemple :
+de changer la couleur du texte
+de changer la couleur de fond du titre
+de souligner seulement la 2ème phrase
+de centrer le texte
+de remettre Archimède à l'endroit (voir la propriété 'transform')
+
+À chaque changement que tu feras dans le code, il te faudra cliquer sur la flèche 'refresh' pour voir le résultat
+
+Attention, si tu rafraîchis la page, toutes tes modifications dans le code disparaîtront.
+
+HTML
+CSS
+Résultat
+Archimède, ce héros
+
+Archimède est le vérible maître spirituel de Merlin. Sans lui, Merlin ne serait rien.
+
+Il tente à l'occasion d'éduquer Moustique. Mais ce gamin ne comprend rien à rien.
+
+LES HUMAINS SONT FURIEUX.
+
+Même si ils sont parfois hilarants...
+
+page 3:
+
+Maintenant, jouons !
+Nous allons jouer au jeu des 7 différences :
+l'exemple est à droite. Et la partie gauche est pour toi.
+Fais en sorte que ton résultat soit identique à l'exemple !
+HTML
+CSS
+Résultat
+Archimède est
+le plus beau
+le plus fort
+le plus grand
+le plus intelligent
+le plus drôle
+
+mais surtout il n'aime pas l'eau !
+
+Original
+Archimède est
+le plus beau
+le plus fort
+le plus grand
+le plus intelligent
+le meilleur
+
+MAIS SURTOUT IL N'AIME PAS L'EAU !
+
+page 4:
+
+On rebat les cartes !
+Tu n'as encore rien vu en CSS
+Recherche un peu du côté des animations et des transitions en CSS...
+HTML
+CSS
+Résultat
+L'écureuil affectueux & le Moustique qui s'enfuit
+Exemple
+L'écureuil affectueux & le Moustique qui s'enfuit
+
+page 5:
+
+Harder, better, stronger!
+Bon, il est temps maintenant de sortir de google chrome, et de créer/de modifier directement tes fichiers HTML et CSS...
+
+
+
+Ouvre le dossier petit_bain_web qui se trouve sur le Desk de ton poste de travail.
+Tu y trouveras les fichiers 19.html et 19.css, et quelques images en plus.
+
+Ouvre ces fichiers 19.html et 19.css avec Sublim Text, en glissant le dossier petit_bain_web sur cette icône dans les applications.
+(Sublim Text est un éditeur de texte, comme Word ou Open Office, mais spécifique pour le code. Il en existe d'autres, mais pourquoi pas lui ?)
+
+
+Tu peux maintenant écrire du code html en 19.html, à l'endroit indiqué, et du css en 19.css
+Pour te faciliter la tâche si tu veux inclure des images, nous t'en avons déjà fourni quelques-unes.
+
+
+Pour visualiser ton travail, rien de plus simple : double-clique sur 19.html, le fichier va s'ouvrir dans un navigateur web.
+À chaque fois que tu modifies l'un des fichiers 19.html ou 19.css, tu n'auras qu'à rafraîchir la page dans le navigateur.
+
+
+Une astuce : sur ta page web dans le navigateur : clic droit, puis 'Inspect'
+La console du navigateur s'ouvre.
+Et tu pourras y voir tout ton code et le modifier !
+Tu verras en direct les modifications sur ta page, ce qui est très pratique pour travailler.
+Mais attention, ces modifications sont provisoires et disparaîtront au prochain rafraîchissement de page.
+N'oublie pas de copier-coller ces modifications provisoires dans tes fichiers 19.html et 19.css pour les enregister.
+
+
+
+
+Tu as carte blanche, sois créatif.ve, fais-toi plaisir !

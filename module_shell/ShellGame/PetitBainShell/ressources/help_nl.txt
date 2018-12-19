@@ -1,0 +1,11 @@
+Dit is wat je tot nu toe geleerd hebt:
+
+'back' : Brengt je terug naar Artemis die voor de hoofdpoort staat.
+
+'executables' : Executables zijn programma's die gebruikt kunnen worden met './'.
+Deze zijn in het blauw.
+
+'mappen' : Mappen bevatten executables, submappen en nog meer bestanden.
+Deze zijn in het groen.
+
+'./' : Dit laat je toe een executable uit te voeren. In dit geval laat het je interacteren met personages en objecten.

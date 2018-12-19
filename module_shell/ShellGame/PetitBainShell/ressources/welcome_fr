@@ -1,0 +1,29 @@
+ /$$      /$$  /$$$$$$  /$$$$$$$  /$$   /$$ /$$       /$$$$$$$$        /$$$$$$  /$$   /$$ /$$$$$$$$ /$$       /$$
+| $$$    /$$$ /$$__  $$| $$__  $$| $$  | $$| $$      | $$_____/       /$$__  $$| $$  | $$| $$_____/| $$      | $$
+| $$$$  /$$$$| $$  \ $$| $$  \ $$| $$  | $$| $$      | $$            | $$  \__/| $$  | $$| $$      | $$      | $$
+| $$ $$/$$ $$| $$  | $$| $$  | $$| $$  | $$| $$      | $$$$$         |  $$$$$$ | $$$$$$$$| $$$$$   | $$      | $$
+| $$  $$$| $$| $$  | $$| $$  | $$| $$  | $$| $$      | $$__/          \____  $$| $$__  $$| $$__/   | $$      | $$
+| $$\  $ | $$| $$  | $$| $$  | $$| $$  | $$| $$      | $$             /$$  \ $$| $$  | $$| $$      | $$      | $$
+| $$ \/  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$/| $$$$$$$$| $$$$$$$$      |  $$$$$$/| $$  | $$| $$$$$$$$| $$$$$$$$| $$$$$$$$
+|__/     |__/ \______/ |_______/  \______/ |________/|________/       \______/ |__/  |__/|________/|________/|________/
+
+
+
+
+
+
+Bonjour et bienvenu a 19!
+
+Dans ce petit jeu, vous allez vous balader dans le chateau et resoudre des enigmes.
+Ces enigmes vous permettront d'apprendre la base de shell!
+En d'autres mots, comment vous deplacer dans votre ordinateur,
+comment creer des fichiers, comment les supprimer et les deplacer et plus encore!
+Pour interagir avec des personnages ou des objets,
+vous pouvez juste ecrire './' suivi du nom du personnage ou de l'objet.
+
+Ecrivez 'start' dans le terminal pour commencer!
+
+'./' sert a executer les executables.
+Vous pouvez essayer ici! Artemis devrait etre la. Essayez : './artemis'.
+Si vous avez besoin d'aide vous pouvez juste ecrire 'shelp'.
+Et si vous vous etes perdu vous pouvez ecrire 'back' pour revenir ici.

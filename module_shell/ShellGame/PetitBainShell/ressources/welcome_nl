@@ -1,0 +1,29 @@
+ /$$      /$$  /$$$$$$  /$$$$$$$  /$$   /$$ /$$       /$$$$$$$$        /$$$$$$  /$$   /$$ /$$$$$$$$ /$$       /$$
+| $$$    /$$$ /$$__  $$| $$__  $$| $$  | $$| $$      | $$_____/       /$$__  $$| $$  | $$| $$_____/| $$      | $$
+| $$$$  /$$$$| $$  \ $$| $$  \ $$| $$  | $$| $$      | $$            | $$  \__/| $$  | $$| $$      | $$      | $$
+| $$ $$/$$ $$| $$  | $$| $$  | $$| $$  | $$| $$      | $$$$$         |  $$$$$$ | $$$$$$$$| $$$$$   | $$      | $$
+| $$  $$$| $$| $$  | $$| $$  | $$| $$  | $$| $$      | $$__/          \____  $$| $$__  $$| $$__/   | $$      | $$
+| $$\  $ | $$| $$  | $$| $$  | $$| $$  | $$| $$      | $$             /$$  \ $$| $$  | $$| $$      | $$      | $$
+| $$ \/  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$/| $$$$$$$$| $$$$$$$$      |  $$$$$$/| $$  | $$| $$$$$$$$| $$$$$$$$| $$$$$$$$
+|__/     |__/ \______/ |_______/  \______/ |________/|________/       \______/ |__/  |__/|________/|________/|________/
+
+
+
+
+
+
+Hallo en welkom in 19!
+
+In dit spel zal je door een kasteel heen lopen en raadsels oplossen.
+Deze raadsels zullen je de basis aanleren van shell commando's!
+Met andere woorden, je zal leren hoe te navigeren door je computer,
+hoe je bestanden kan maken, ze verwijderen, kopieren, en nog veel meer!
+
+Schrijf ‘start’ in de terminal om te beginnen!
+
+Om met personages en verschijdene objecten te interacteren,
+moet je gewoon './' typen, gevolgd door de naam van het personage of voorwerp.
+'./' is eigenlijk hoe je een executable uitvoert.
+Je kan het hier proberen! Artemis zou hier moeten zijn. Probeer eens : './artemis'.
+Indien je op eender moment hulp nodig hebt kan je gewoon 'shelp' schrijven.
+En indien je verloren geraakt kan je gewoon 'back' schrijven om terug naar hier te komen.
