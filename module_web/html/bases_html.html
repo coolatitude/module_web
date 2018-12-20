@@ -1,0 +1,68 @@
+<div class="text-center">
+    <h2 data-text></h2>
+    <h1 data-text></h1>
+</div>
+<div class="intro-container">
+    <textarea readonly class="textarea-intro" data-text></textarea>
+</div>
+<div class="text-center">
+    <h2 data-text></h2>
+    <p data-text></p>
+    <p data-text></p>
+    <p data-text></p>
+    <p data-text></p>
+</div>
+<div id="Example-CSS" class="example white-box">
+    <div class="ctrl-container">
+        <div class="ctrl">
+            <div class="title">
+                <h3>HTML</h3>
+            </div>
+            <textarea class="input" id="UserHTML">
+                <head></head>
+                <body>
+                    <div>
+                        <h3 data-text></h3>
+                        <p data-text></p>
+                        <p data-text></p>
+                        <p data-text></p>
+                        <a href="https://www.youtube.com/watch?v=KLI46yMdtmU" target="_blanck" data-text></a>
+                        <div contentEditable="true">
+                            <img src="img/archibook.png">
+                        </div>
+                    </div>
+                </body>
+            </textarea>
+        </div>
+    </div>
+    <div class="btn-refresh-container">
+        <button onclick="updateHTML()" class="btn-refresh"></button>
+    </div>
+    <div class="result-container">
+        <div class="title">
+            <h3 data-text></h3>
+        </div>
+        <div class="result-area textarea">
+            <div id="UserResult"></div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <h2 data-text></h2>
+</div>
+<div class="footer">
+    <div class="flex">
+        <div class="arrow"></div>
+        <a href="bases_css.html">
+            <img src="img/arrow-fantasy.png" class="arrow">
+        </a>
+    </div>
+</div>
+<script type="text/javascript">
+    function updateHTML() {
+        let input = document.getElementById("UserHTML").value;
+        document.getElementById("UserResult").innerHTML = input;
+    }
+    updateHTML()
+</script>
+</body></html>

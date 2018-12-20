@@ -1,52 +1,33 @@
 // time before reset of session
 var expires = 20;
 
-var pages = [
-	"index",
-	"bases_html",
-	"bases_css",
-	"ex00",
-	"ex01",
-	"ex02"]
+var imgpath = "/img/";
 
-var menu_pages = [{
-    ref: "index",
+var locale = "fr";
+
+var pages = ["home", "bases_html", "bases_css", "ex00", "ex01", "ex02"];
+
+var currentPage = 0;
+
+var menu_pages = {home:{
+    ref: "home",
     image: "home.png"
-}, {
+}, bases_html:{
     ref: "bases_html",
-    image: "archinook.png"
-}, {
+    image: "archibook.png"
+}, bases_css:{
     ref: "bases_css",
     image: "archibook2.png"
-}, {
+}, ex00:{
     ref: "ex00",
     image: "moustique-fish.png"
-}, {
+}, ex01:{
     ref: "ex01",
     image: "moustique-squirrel.png"
-}, {
+}, ex02:{
     ref: "ex02",
     image: "moustique-bird.png"
-}];
-
-/*		<a href="index.html">
-			<div><img src="img/home.png"></div>
-		</a>
-		<a href="bases_html.html">
-			<div><img src="img/archibook.png" style="opacity: 1;"></div>
-		</a>
-		<a href="bases_css.html">
-			<div><img src="img/archibook2.png"></div>
-		</a>
-		<a href="ex00.html">
-			<div><img src="img/moustique-fish.png"></div>
-		</a>
-		<a href="ex01.html">
-			<div><img src="img/moustique-squirrel.png"></div>
-		</a>
-		<a href="ex02.html">
-			<div><img src="img/moustique-bird.png"></div>
-		</a>*/
+}};
 
 function setCookie(cname, cvalue) {
     var d = new Date();
@@ -71,45 +52,101 @@ function getCookie(cname) {
     return "";
 }
 
-function customjoin(array)
-{
-	var l = "";
-	for (let x = 0; x < array.length; x++)
-		l = l + array[x] + ".";
-	l = l.slice(0, l.length - 1);
-	return (l);
+function customjoin(array) {
+    var l = "";
+    for (let x = 0; x < array.length; x++)
+        l = l + array[x] + ".";
+    l = l.slice(0, l.length - 1);
+    return (l);
 }
 
-function show_menu(pgs)
-{
-	var menu = $("#top-menu");
-	for (let x = 0; x < pgs.length; x++)
-	{
-		if (pgs[x] == 1)
-		{
-			let n = $('<img>', {src: imgpath + menu_pages[x].image});/////////////////////////////////////
-			menu.append(n);
-		}
-			menu.append($('<a'))
-	}
+function show_menu(pgs) {
+    let i;
+    let n;
+    var menu = $("#top-menu");
+    menu.html("");
+    for (let x = 0; x < pgs.length; x++) {
+        if (pgs[x] == 1) {
+            i = $('<div>');
+            n = $('<img>', {
+                src: imgpath + menu_pages[pages[x]].image
+            });
+            i.append(n);
+            n = $('<a>', {
+                onclick: "openPageNumber(" + x + ");"
+            });
+            n.append(i);
+            menu.append(n);
+        }
+    }
 }
 
-var visited;
+function addEventListener()
+{
+    console.log('HELLO');
+}
+
+function show_content() {
+    let path = pages[currentPage];
+    $.ajax({
+        type: "GET",
+        url: "html/" + path + ".html",
+        success: (function(data) {
+            $("#page").html("");
+            $("#page").html(data);
+            $.ajax({
+                type: "GET",
+                url: "lang/" + locale + "/" + path,
+                success: (function(data) {
+                    let elem = $('[data-text]');
+                    let text = data.split("<text>");
+                    text = text.slice(1);
+                    for (let x = 0; x < elem.length; x++)
+                    {
+                        if ($(elem[x]).is($('<textarea>')))
+                            $(elem[x]).text(text[x]);
+                        else
+                            $(elem[x]).html(text[x]);
+                    }
+                    addEventListener();
+                }
+                )
+            })
+        }
+        )
+    });
+}
 
 function main() {
-    visited = getCookie("visited");
-    if (visited == "")
-    {
-    	for(let x = 0; x < pages.length - 1; x++)
-    		visited = visited + "0" + ".";
-    	visited = visited + "0";
+    if (window.location.pathname == "/index.html")
+        window.location.href = "http://localhost:8000";
+    let visited = getCookie("visited");
+    if (visited == "") {
+        for (let x = 0; x < pages.length - 1; x++)
+            visited = visited + "0" + ".";
+        visited = visited + "0";
     }
     visited = visited.split(".");
-    visited[pages.indexOf(
-    	window.location.pathname.slice(1).split(".html")[0])] = 1;
+    let currentpath = window.location.pathname.slice(1).split(".html")[0];
+    if (currentpath == "")
+        currentpath = "index";
+    visited[pages.indexOf(currentpath)] = 1;
     setCookie("visited", customjoin(visited));
-    var menu = $("#top-menu");
-    //n.append(jQuery('<img>',{src: homeurl, class: "attendanceEdit", alt: "edit"}));
+    show_menu(visited);
+    openPageNumber(0);
+}
+
+function nextPage() {
+    openPageNumber(currentPage + 1);
+}
+
+function previousPage() {
+    openPageNumber(currentPage - 1);
+}
+
+function openPageNumber(nb) {
+    currentPage = nb;
+    show_content();
 }
 
 main();

@@ -1,0 +1,107 @@
+<div class="text-center">
+	<h2 data-text></h2>
+	<h1 data-text></h1>
+</div>
+
+<div class="intro-container">
+<textarea readonly class="textarea-intro bases-css-intro"></textarea>
+</div>
+
+<div class="text-center">
+	<h2 data-text></h2>
+		<p data-text></p>
+		<p data-text></p>
+		<p data-text></p>
+		<p data-text></p>
+	</div>
+
+	<div id="Example-CSS" class="example white-box">
+
+		<div class="ctrl-container">
+			<div class="ctrl">
+				<div class="title"><h3>HTML</h3></div>
+				<textarea class="input" id="UserHTML">
+<html>
+<div class="owl-lover">
+	<div contentEditable="true">
+		<img src="img/archiwater.png">
+	</div>
+	<h3 data-text></h3>
+	<p data-text></p>
+	<p data-text></p>
+	<p class="angry" data-text></p>
+	<a href="https://www.youtube.com/watch?v=KLI46yMdtmU" target="_blanck" data-text></a>
+
+</div>
+</html>
+				</textarea>
+			</div>
+			<div class="ctrl">
+				<div class="title"><h3>CSS</h3></div>
+				<textarea class="input" id="UserCSS">
+.owl-lover div img{
+	transform: rotate(90deg);
+}
+.owl-lover {
+	padding: 19px;
+	font-weight: bold;
+	border: solid 1px;
+	border-color: #e2f9f1;
+	border-radius: 5px;
+	text-align: left;
+}
+.owl-lover h1 {
+	text-align: center;
+}
+.angry {
+	color: red;
+	text-transform: uppercase;
+}
+a:hover {
+	color: green
+}
+.owl-lover img {
+	width: 100px
+}
+				</textarea>
+			</div>
+		</div>
+
+		<div class="btn-refresh-container">
+			<button onclick="updateHTMLWithCSS()" class="btn-refresh">
+			</button>
+		</div>
+
+		<div class="result-container">
+			<div class="title"><h3 data-text></h3></div>
+			<div class="result-area">
+				<div id="UserResult"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+	<div class="flex">
+		<a href="bases_html.html"><img src="img/arrow-fantasy-prev.png" class="arrow"></a>
+		<a href="ex00.html"><img src="img/arrow-fantasy.png" class="arrow"></a>
+	</div>
+	</div>
+
+
+	<script type="text/javascript">
+
+		function	updateHTMLWithCSS()
+		{
+			let css = document.getElementById("UserCSS").value;
+			let HTML = document.getElementById("UserHTML").value;
+			document.getElementById("CSSInput").innerHTML = css;
+			document.getElementById("UserResult").innerHTML = HTML;
+		}
+		updateHTMLWithCSS()
+		$(window).bind('beforeunload', function(){
+		  	return 'Are you sure you want to leave?';
+		});
+	</script>
+</body>
+</html>

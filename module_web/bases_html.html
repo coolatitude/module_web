@@ -4,30 +4,12 @@
 	<meta charset=utf-8>
 	<title>Petit Bain</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="new.css">
 	<script src="jquery.js"></script>
 	<style id="CSSInput"></style>
 </head>
 <body>
-	<div class="top-menu">
-		<a href="index.html">
-			<div><img src="img/home.png"></div>
-		</a>
-		<a href="bases_html.html">
-			<div><img src="img/archibook.png" style="opacity: 1;"></div>
-		</a>
-		<a href="bases_css.html">
-			<div><img src="img/archibook2.png"></div>
-		</a>
-		<a href="ex00.html">
-			<div><img src="img/moustique-fish.png"></div>
-		</a>
-		<a href="ex01.html">
-			<div><img src="img/moustique-squirrel.png"></div>
-		</a>
-		<a href="ex02.html">
-			<div><img src="img/moustique-bird.png"></div>
-		</a>
-	</div>
+	<div class="top-menu"></div>
 
 	<div class="text-center">
 		<h2>D'abord, les bases !</h2>
@@ -130,11 +112,9 @@ Tu les découvriras petit à petit...
 			document.getElementById("UserResult").innerHTML = input;
 		}
 		updateHTML()
-		$(window).bind('beforeunload', function(){
-		  	return 'Are you sure you want to leave?';
-		});
 
 	</script>
+    <script src="./global.js"></script>
 
 </body>
 </html>
