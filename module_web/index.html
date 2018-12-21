@@ -11,7 +11,16 @@
     </head>
     <body>
         <div id="top-menu"></div>
-        <div id="page"></div>
-        <script src="./global.js"></script>
+		<div id="languages" class="flex">
+			<img onclick="changeLocale('en');"class="locale" src="img/flag_en.png">
+			<img onclick="changeLocale('de');"class="locale" src="img/flag_de.png">
+			<img onclick="changeLocale('fr');"class="locale" src="img/flag_fr.png">
+			</div>
+		<div id="page"></div>
+		<footer class="flex">
+			<img onclick="previousPage();" id="previousPageButton" src="img/arrow-fantasy-prev.png" class="arrow">
+			<img onclick="nextPage();" id="nextPageButton" src="img/arrow-fantasy.png" class="arrow">
+		</footer>
+		<script src="./global.js"></script>
     </body>
 </html>

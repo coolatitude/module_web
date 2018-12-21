@@ -9,6 +9,8 @@ var pages = ["home", "bases_html", "bases_css", "ex00", "ex01", "ex02"];
 
 var currentPage = 0;
 
+var visited;
+
 var menu_pages = {home:{
     ref: "home",
     image: "home.png"
@@ -60,7 +62,8 @@ function customjoin(array) {
     return (l);
 }
 
-function show_menu(pgs) {
+function show_menu() {
+    let pgs = visited;
     let i;
     let n;
     var menu = $("#top-menu");
@@ -81,12 +84,16 @@ function show_menu(pgs) {
     }
 }
 
-function addEventListener()
-{
-    console.log('HELLO');
-}
+function addEventListener(){}
 
 function show_content() {
+    visited = getCookie("visited");
+    if (visited == "") {
+        for (let x = 0; x < pages.length - 1; x++)
+            visited = visited + "0" + ".";
+        visited = visited + "0";
+    }
+    visited = visited.split(".");
     let path = pages[currentPage];
     $.ajax({
         type: "GET",
@@ -102,12 +109,7 @@ function show_content() {
                     let text = data.split("<text>");
                     text = text.slice(1);
                     for (let x = 0; x < elem.length; x++)
-                    {
-                        if ($(elem[x]).is($('<textarea>')))
-                            $(elem[x]).text(text[x]);
-                        else
-                            $(elem[x]).html(text[x]);
-                    }
+                        $(elem[x]).html(text[x]);
                     addEventListener();
                 }
                 )
@@ -115,25 +117,28 @@ function show_content() {
         }
         )
     });
+    if (currentPage < pages.length - 1)
+        $("#nextPageButton").show();
+    else
+        $("#nextPageButton").hide();
+    if (currentPage > 0)
+        $("#previousPageButton").show();
+    else
+        $("#previousPageButton").hide();
+    if (visited[currentPage] != 1)
+    {
+        visited[currentPage] = 1;
+        setCookie("visited", customjoin(visited));
+        show_menu();
+    }
 }
 
 function main() {
     if (window.location.pathname == "/index.html")
         window.location.href = "http://localhost:8000";
-    let visited = getCookie("visited");
-    if (visited == "") {
-        for (let x = 0; x < pages.length - 1; x++)
-            visited = visited + "0" + ".";
-        visited = visited + "0";
-    }
-    visited = visited.split(".");
-    let currentpath = window.location.pathname.slice(1).split(".html")[0];
-    if (currentpath == "")
-        currentpath = "index";
-    visited[pages.indexOf(currentpath)] = 1;
-    setCookie("visited", customjoin(visited));
-    show_menu(visited);
-    openPageNumber(0);
+    setCookie("visited", "");
+    currentPage = 0;
+    show_content();
 }
 
 function nextPage() {
@@ -147,6 +152,13 @@ function previousPage() {
 function openPageNumber(nb) {
     currentPage = nb;
     show_content();
+}
+
+function changeLocale(language)
+{
+    locale = language;
+    console.log(hey);
+    
 }
 
 main();
