@@ -7,29 +7,42 @@ var locale = "fr";
 
 var pages = ["home", "bases_html", "bases_css", "ex00", "ex01", "ex02"];
 
-var currentPage = 0;
+var currentPage = 2;
 
 var visited;
 
-var menu_pages = {home:{
-    ref: "home",
-    image: "home.png"
-}, bases_html:{
-    ref: "bases_html",
-    image: "archibook.png"
-}, bases_css:{
-    ref: "bases_css",
-    image: "archibook2.png"
-}, ex00:{
-    ref: "ex00",
-    image: "moustique-fish.png"
-}, ex01:{
-    ref: "ex01",
-    image: "moustique-squirrel.png"
-}, ex02:{
-    ref: "ex02",
-    image: "moustique-bird.png"
-}};
+var menu_pages = [
+    {
+        ref: "home",
+        image: "home.png",
+        exercice_type: 0
+    },
+    {
+        ref: "bases_html",
+        image: "archibook.png",
+        exercice_type: 0
+    },
+    {
+        ref: "bases_css",
+        image: "archibook2.png",
+        exercice_type: 2
+    },
+    {
+        ref: "ex00",
+        image: "moustique-fish.png",
+        exercice_type: 2
+    },
+    {
+        ref: "ex01",
+        image: "moustique-squirrel.png",
+        exercice_type: 0
+    },
+    {
+        ref: "ex02",
+        image: "moustique-bird.png",
+        exercice_type: 0
+    }
+];
 
 function setCookie(cname, cvalue) {
     var d = new Date();
@@ -72,7 +85,7 @@ function show_menu() {
         if (pgs[x] == 1) {
             i = $('<div>');
             n = $('<img>', {
-                src: imgpath + menu_pages[pages[x]].image
+                src: imgpath + menu_pages[x].image
             });
             i.append(n);
             n = $('<a>', {
@@ -84,7 +97,29 @@ function show_menu() {
     }
 }
 
-function addEventListener(){}
+function addEventListener() {
+    let x = menu_pages[currentPage].exercice_type;
+    if (x == 2) {
+        $("#UserCSS").on("input", function (){
+            $("#CSSInput").html($("#UserCSS").val());
+        });
+        $("#UserHTML").on("input", function (){
+            $("#UserResult").html($("#UserHTML").val());
+        });
+        $("#CSSInput").html($("#UserCSS").val());
+        $("#UserResult").html($("#UserHTML").val());
+    }
+    else if (x == 1) {
+        
+    }
+}
+
+function updateHTML(x) {
+    let css = document.getElementById("UserCSS").value;
+    let HTML = document.getElementById("UserHTML").value;
+    $("#CSSInput").html(css);
+    document.getElementById("UserResult").innerHTML = HTML;
+}
 
 function show_content() {
     visited = getCookie("visited");
@@ -102,7 +137,7 @@ function show_content() {
             $("#page").html(data);
             $.ajax({
                 type: "GET",
-                url: "lang/" + locale + "/" + path,
+                url: "lang/" + locale + "/" + path + ".lang",
                 success: (function(data) {
                     let elem = $('[data-text]');
                     let text = data.split("<text>");
@@ -124,8 +159,7 @@ function show_content() {
         $("#previousPageButton").show();
     else
         $("#previousPageButton").hide();
-    if (visited[currentPage] != 1)
-    {
+    if (visited[currentPage] != 1) {
         visited[currentPage] = 1;
         setCookie("visited", customjoin(visited));
         show_menu();
@@ -153,7 +187,6 @@ function main() {
     if (window.location.pathname == "/index.html")
         window.location.href = "http://localhost:8000";
     setCookie("visited", "");
-    currentPage = 3;/////////////////////////////////////////////////////
     show_content();
 }
 
@@ -170,8 +203,7 @@ function openPageNumber(nb) {
     show_content();
 }
 
-function changeLocale(language)
-{
+function changeLocale(language) {
     locale = language;
     changeLocale_content();
 }

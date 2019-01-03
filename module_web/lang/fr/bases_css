@@ -39,9 +39,17 @@ Facile comme tout !
 			<br>de remettre Archimède à l'endroit (voir la propriété 'transform')
 <text>À chaque changement que tu feras dans le code, il te faudra cliquer sur la flèche 'refresh' pour voir le résultat
 <text>Attention, si tu rafraîchis la page, toutes tes modifications dans le code disparaîtrons.
-<text>Archimède, ce héros
-<text>Archimède est le vérible maître spirituel de Merlsdfin. Sans lui, Merlin ne serait rien.
-<text>Il tente à l'occasion d'éduquer Moustique. Mais ce gamin ne comprend rien à rien.
-<text>Les humains sont <strong>exaspérants</strong>.
-<text>Même si ils sont parfois hilarants..
-<text>Résultat.
+<text><html>
+<div class="owl-lover">
+	<div contentEditable="true">
+		<img src="img/archiwater.png">
+	</div>
+	<h3>Archimède, ce héros</h3>
+	<p>Archimède est le vérible maître spirituel de Merlsdfin. Sans lui, Merlin ne serait rien.</p>
+	<p>Il tente à l'occasion d'éduquer Moustique. Mais ce gamin ne comprend rien à rien.</p>
+	<p class="angry">Les humains sont <strong>exaspérants</strong>.</p>
+	<a href="https://www.youtube.com/watch?v=KLI46yMdtmU" target="_blanck">Même si ils sont parfois hilarants...</a>
+
+</div>
+</html>
+<text>Résultat

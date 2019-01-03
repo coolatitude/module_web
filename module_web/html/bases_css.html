@@ -20,20 +20,7 @@
 		<div class="ctrl-container">
 			<div class="ctrl">
 				<div class="title"><h3>HTML</h3></div>
-				<textarea class="input" id="UserHTML">
-<html>
-<div class="owl-lover">
-	<div contentEditable="true">
-		<img src="img/archiwater.png">
-	</div>
-	<h3 data-text></h3>
-	<p data-text></p>
-	<p data-text></p>
-	<p class="angry" data-text></p>
-	<a href="https://www.youtube.com/watch?v=KLI46yMdtmU" target="_blanck" data-text></a>
-
-</div>
-</html>
+				<textarea class="input" id="UserHTML" data-text>
 				</textarea>
 			</div>
 			<div class="ctrl">
@@ -66,32 +53,13 @@ a:hover {
 				</textarea>
 			</div>
 		</div>
-
-		<div class="btn-refresh-container">
-			<button onclick="updateHTMLWithCSS()" class="btn-refresh">
-			</button>
-		</div>
-
 		<div class="result-container">
 			<div class="title"><h3 data-text></h3></div>
 			<div class="result-area">
 				<div id="UserResult"></div>
 			</div>
 		</div>
-
+	<style id="CSSInput"></style>
 	</div>
-
-
-	<script type="text/javascript">
-
-		function	updateHTMLWithCSS()
-		{
-			let css = document.getElementById("UserCSS").value;
-			let HTML = document.getElementById("UserHTML").value;
-			$("#CSSInput").html(css);
-			document.getElementById("UserResult").innerHTML = HTML;
-		}
-		updateHTMLWithCSS()
-	</script>
 </body>
 </html>

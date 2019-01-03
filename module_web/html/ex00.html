@@ -30,12 +30,6 @@
 					</textarea>
 				</div>
 			</div>
-
-			<div class="btn-refresh-container flex-1">
-				<button onclick="updateHTMLWithCSS()" class="btn-refresh">
-				</button>
-			</div>
-
 			<div class="result-container flex-1">
 				<div class="title"><h3 data-text></h3></div>
 				<div class="result-area">
@@ -65,17 +59,3 @@
 		</div>
 	</div>
 	<style id="CSSInput"></style>
-	<script type="text/javascript">
-
-		function	updateHTMLWithCSS()
-		{
-			let css = document.getElementById("UserCSS").value;
-			let HTML = document.getElementById("UserHTML").value;
-			$("#CSSInput").html(css);
-			document.getElementById("UserResult").innerHTML = HTML;
-		}
-		updateHTMLWithCSS()
-		$(window).bind('beforeunload', function(){
-		  	return 'Are you sure you want to leave?';
-		});
-	</script>
