@@ -1,0 +1,47 @@
+<text>D'abord, les bases !
+<text>“le CSS, c'est la forme"
+<text>Maintenant, on peut ajouter du style...
+
+...et pour ca, on va utiliser du CSS.
+C'est toujours aussi simple : il suffit d'appeler une balise, puis de décrire entre accolades le style du contenu de la balise désignée.
+Par exemple :
+p {
+	color: red;
+	text-transform: uppercase;
+}
+indique que tous les textes entre les balises <p></p> apparaîtront en rouge et en lettres capitales.
+On peut ainsi désigner n'importe quel nom de balise et lui donner du style.
+
+Mais si on veut styliser seulement une seule balise <p></p> en particulier, on donnera à cette balise une classe :
+<p class="awesome-class"></p>
+Puis, on appellera cette balise particulière en la désignant par le nom de sa classe (avec un point devant) :
+.awesome-class {
+	color: yellow;
+	text-decoration: underline;
+}
+Ainsi, le texte contenu dans cette balise <p></p> très particulière sera souligné et jaune.
+Les classes peuvent être attribuées à autant de balises qu'on le souhaite, et à n'importe quel type de balise.
+
+Tu peux aussi cumuler les appels des balises et des classes :
+.awesome-class h1 {
+	background-color: gold;
+}
+Les titres 'h1' contenus dans une balise tagée avec la classe 'awesome-class', et seulement ceux-çi, auront un fond doré.
+
+Facile comme tout !
+<text>Essayons !
+<text>Observe bien le code et le résultat.
+<text>Puis, essaie par exemple :
+			<br>de changer la couleur du texte
+			<br>de changer la couleur de fond du titre
+			<br>de souligner seulement la 2ème phrase
+			<br>de centrer le texte
+			<br>de remettre Archimède à l'endroit (voir la propriété 'transform')
+<text>À chaque changement que tu feras dans le code, il te faudra cliquer sur la flèche 'refresh' pour voir le résultat
+<text>Attention, si tu rafraîchis la page, toutes tes modifications dans le code disparaîtrons.
+<text>Archimède, ce héros
+<text>Archimède est le vérible maître spirituel de Merlsdfin. Sans lui, Merlin ne serait rien.
+<text>Il tente à l'occasion d'éduquer Moustique. Mais ce gamin ne comprend rien à rien.
+<text>Les humains sont <strong>exaspérants</strong>.
+<text>Même si ils sont parfois hilarants..
+<text>Résultat.

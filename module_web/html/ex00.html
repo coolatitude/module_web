@@ -1,0 +1,81 @@
+	<div class="text-center">
+		<h1 data-text></h1>
+		<h4 data-text></h4>
+	</div>
+	<div class="flex">
+		<div id="Example-CSS" class="example white-box flex-3">
+			<div class="ctrl-container flex-3">
+				<div class="ctrl">
+					<div class="title"><h3>HTML</h3></div>
+					<textarea class="input" id="UserHTML" data-text>
+					</textarea>
+				</div>
+				<div class="ctrl">
+					<div class="title"><h3>CSS</h3></div>
+					<textarea class="input" id="UserCSS">.owl-lover
+{
+	background-color: grey;
+	padding: 19px;
+	color: pink;
+	border-color: #e2f9f1;
+	border-radius: 5px;
+	height: 50vh;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.wet
+{
+	height: 42px;
+}
+					</textarea>
+				</div>
+			</div>
+
+			<div class="btn-refresh-container flex-1">
+				<button onclick="updateHTMLWithCSS()" class="btn-refresh">
+				</button>
+			</div>
+
+			<div class="result-container flex-1">
+				<div class="title"><h3 data-text></h3></div>
+				<div class="result-area">
+					<div id="UserResult"></div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="white-box flex-1">
+			<div class="ctrl-container">
+				<div class="ctrl flex">
+					<div class="title"><h3 data-text></h3></div>
+					<div class="textarea exemple">
+						<h1 data-text></h1>
+						<h2 data-text></h2>
+						<h3 data-text></h3>
+						<h4 data-text></h4>
+						<h5 data-text></h5>
+						<h6 data-text></h6>
+						<p class="angry" data-text></p>
+						<div><img src="img/archiwater.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<style id="CSSInput"></style>
+	<script type="text/javascript">
+
+		function	updateHTMLWithCSS()
+		{
+			let css = document.getElementById("UserCSS").value;
+			let HTML = document.getElementById("UserHTML").value;
+			$("#CSSInput").html(css);
+			document.getElementById("UserResult").innerHTML = HTML;
+		}
+		updateHTMLWithCSS()
+		$(window).bind('beforeunload', function(){
+		  	return 'Are you sure you want to leave?';
+		});
+	</script>

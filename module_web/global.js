@@ -99,7 +99,6 @@ function show_content() {
         type: "GET",
         url: "html/" + path + ".html",
         success: (function(data) {
-            $("#page").html("");
             $("#page").html(data);
             $.ajax({
                 type: "GET",
@@ -117,7 +116,7 @@ function show_content() {
         }
         )
     });
-    if (currentPage < pages.length - 1)
+    if (currentPage < pages.length - 1 && currentPage != 0)
         $("#nextPageButton").show();
     else
         $("#nextPageButton").hide();
@@ -133,11 +132,28 @@ function show_content() {
     }
 }
 
+function changeLocale_content() {
+    let path = pages[currentPage];
+    $.ajax({
+        type: "GET",
+        url: "lang/" + locale + "/" + path,
+        success: (function(data) {
+            let elem = $('[data-text]');
+            let text = data.split("<text>");
+            text = text.slice(1);
+            for (let x = 0; x < elem.length; x++)
+                $(elem[x]).html(text[x]);
+            addEventListener();
+        }
+        )
+    });
+}
+
 function main() {
     if (window.location.pathname == "/index.html")
         window.location.href = "http://localhost:8000";
     setCookie("visited", "");
-    currentPage = 0;
+    currentPage = 3;/////////////////////////////////////////////////////
     show_content();
 }
 
@@ -157,8 +173,7 @@ function openPageNumber(nb) {
 function changeLocale(language)
 {
     locale = language;
-    console.log(hey);
-    
+    changeLocale_content();
 }
 
 main();

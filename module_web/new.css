@@ -20,6 +20,27 @@ html {
 	width: 59px;
 }
 
+
+
+/*LANGUAGES MENU*/
+#languages {
+	position: absolute;
+	top : 0;
+	right: 0;
+}
+
+#languages img {
+	height : 42px;
+	margin: 5px;
+}
+
+
+
+
+
+
+
+/* INDEX */ 
 .index-container {
     display: flex;
     flex-direction: column;
@@ -65,4 +86,33 @@ html {
   100% {
     margin-left: 19px;
   }
+}
+
+/* EX00 */
+textarea, .textarea {
+	height: 50vh;
+}
+.textarea, .result-area {
+	height: 50vh;
+	width: 30em;
+	text-align: center;
+}
+.textarea img {
+	height: 250px;
+}
+
+.exemple {
+	background-color: yellow;
+	color: brown;
+}
+.textarea .angry {
+	text-transform: uppercase;
+}
+.textarea h1 {
+	text-decoration: underline;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
 }

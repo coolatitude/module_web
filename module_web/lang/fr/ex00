@@ -1,0 +1,31 @@
+<text>Maintenant, jouons !
+<text>
+	Nous allons jouer au jeu des 7 différences :
+	<br>l'exemple est à droite. Et la partie gauche est pour toi.
+	<br>Fais en sorte que ton résultat soit identique à l'exemple !
+	<br>ps: si tu es completement perdu,
+	<br>fait un click doit sur un element puis "inspect".
+<text>
+<html>
+<div class="owl-lover">
+	<h1>Archimède est</h1>
+	<h2>le plus beau</h2>
+	<h1>le plus fort</h1>
+	<h4>le plus grand</h4>
+	<h5>le plus intelligent</h5>
+	<h6>le plus drole</h6>
+	<p>mais surtout il n'aime pas l'eau !</p>
+	<div contentEditable="true">
+		<img src="img/archiwater.png" class="wet">
+	</div>
+</div>
+</html>
+<text>Résultat
+<text>Original
+<text>Archimède est
+<text>le plus beau
+<text>le plus fort
+<text>le plus grand
+<text>le plus intelligent
+<text>le meilleur
+<text>mais surtout il n'aime pas l'eau !
