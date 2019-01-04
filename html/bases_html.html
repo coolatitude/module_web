@@ -18,25 +18,9 @@
             <div class="title">
                 <h3>HTML</h3>
             </div>
-            <textarea class="input" id="UserHTML">
-                <head></head>
-                <body>
-                    <div>
-                        <h3 data-text></h3>
-                        <p data-text></p>
-                        <p data-text></p>
-                        <p data-text></p>
-                        <a href="https://www.youtube.com/watch?v=KLI46yMdtmU" target="_blanck" data-text></a>
-                        <div contentEditable="true">
-                            <img src="img/archibook.png">
-                        </div>
-                    </div>
-                </body>
+            <textarea class="input" id="UserHTML" data-text>
             </textarea>
         </div>
-    </div>
-    <div class="btn-refresh-container">
-        <button onclick="updateHTML()" class="btn-refresh"></button>
     </div>
     <div class="result-container">
         <div class="title">
@@ -50,11 +34,4 @@
 <div class="text-center">
     <h2 data-text></h2>
 </div>
-<script type="text/javascript">
-    function updateHTML() {
-        let input = document.getElementById("UserHTML").value;
-        document.getElementById("UserResult").innerHTML = input;
-    }
-    updateHTML()
-</script>
 </body></html>

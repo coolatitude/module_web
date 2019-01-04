@@ -6,7 +6,7 @@
 #    By: pvanderl <pvanderl@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/03 20:53:15 by pvanderl          #+#    #+#              #
-#    Updated: 2019/01/03 21:55:12 by pvanderl         ###   ########.fr        #
+#    Updated: 2019/01/04 21:09:44 by pvanderl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,26 +22,31 @@ class requestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
 
         if self.path == "/":
-            self.path = "index.html"
+            self.path = "/index.html"
         elif self.path.startswith("/editor") and self.path.endswith("1919"):
             self.path = "dev/editor.html"
         try:
             mimetype = ''
             if self.path.endswith(".html"):
+                self.path = '/html' + self.path
                 mimetype = 'text/html'
             elif self.path.endswith(".jpg"):
+                self.path = '/img' + self.path
                 mimetype = 'image/jpg'
             elif self.path.endswith(".png"):
+                self.path = '/img' + self.path
                 mimetype = 'image/png'
             elif self.path.endswith(".css"):
+                self.path = '/css' + self.path
                 mimetype = 'text/css'
             elif self.path.endswith(".js"):
+                self.path = '/js' + self.path
                 mimetype = 'application/javascript'
             elif self.path.endswith(".gif"):
                 mimetype = 'image/gif'
             elif self.path.endswith(".lang"):
                 mimetype = 'text/html'
-                self.path = self.path[0:-5]
+                self.path = '/lang' + self.path[0:-5]
 
             if mimetype != '':
                 f = open(curdir + sep + self.path)

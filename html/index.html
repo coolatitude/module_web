@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>Petit Bain</title>
+        <link rel="icon" href="logo19.png">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="new.css">
+        <script src="./global_data.js"></script>
+        <script src="/jquery.js"></script>
+        <script src="/script.js"></script>
+    </head>
+    <body>
+        <div id="top-menu"></div>
+        <div id="languages" class="flex">
+            <img onclick="changeLocale('en');" class="locale" src="flag_en.png">
+            <img onclick="changeLocale('de');" class="locale" src="flag_de.png">
+            <img onclick="changeLocale('fr');" class="locale" src="flag_fr.png">
+        </div>
+        <!-- This div contains the entire page -->
+        <div id="page"></div>
+        <!-- This style is for the exercices with user css -->
+        <style id="CSSInput"></style>
+        <footer class="flex">
+            <img onclick="previousPage();" id="previousPageButton" src="arrow-fantasy-prev.png" class="arrow">
+            <img onclick="nextPage();" id="nextPageButton" src="arrow-fantasy.png" class="arrow">
+        </footer>
+        <script src="./global.js"></script>
+    </body>
+</html>

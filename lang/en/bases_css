@@ -1,0 +1,54 @@
+<text>First the basics !
+<text>“the CSS is form"
+<text>Now we can add style...
+
+...and for that, we're going to use CSS.
+It's always as simple as that: just call a tag, then describe in brackets how you want what's in that tag to be stylized.
+For example:
+p {
+	color: red;
+	text-transform: uppercase;
+}
+indicates that all texts between the <p></p> tags will appear in red and capital letters.
+This allows you to designate any tag name and give it style.
+
+But if we want to stylize only one tag <p></p> in particular, we will give this tag a class :
+<p class="awesome-class"></p>
+Then, we will call this particular tag by designating it by the name of its class (with a dot in front):
+.awesome-class {
+	color: yellow;
+	text-decoration: underline;
+}
+Thus, the text contained in this very particular tag <p></p> will be underlined and yellow.
+Classes can be assigned to as many tags as desired, and to any type of tag.
+
+You can also cumulate the calls of tags and classes:
+.awesome-class h1 {
+	background-color: gold;
+}
+The titles "h1" contained in a box with the class "awesome-class", and only those, will have a golden background.
+
+Easy as pie!
+<text>Let's try!
+<text>Observes the code and the result well.
+<text>Then, try for example:
+			<br>to change the color of the text
+			<br>to change the background color of the title
+			<br>to underline only the 2nd sentence
+			<br>to center the text
+			<br>to restore Archimedes to the place (see the property "transform')
+<text>Each time you make a change in the code, you will have to click on the'refresh' arrow to see the result
+<text>Caution, if you refresh the page, all your changes in the code will disappear.
+<text><html>
+<div class="owl-lover">
+	<div contentEditable="true">
+		<img src="archiwater.png">
+	</div>
+	<h3>Archimedes, this hero</h3>
+	<p>Archimedes is the true spiritual master of Merlin. Without him, Merlin would be nothing.</p>
+	<p>He occasionally tries to educate Mosquitoes. But this kid doesn't understand anything.</p>
+	<p class="angry">Humans are <strong>exasperating</strong>.</p>
+	<a href="https://www.youtube.com/watch?v=KLI46yMdtmU" target="_blanck">Even if they are sometimes hilarious...</a>
+	</div>
+</html>
+<text>Result

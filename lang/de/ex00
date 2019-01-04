@@ -4,39 +4,44 @@
 	<meta charset=utf-8>
 	<title>Petit Bain</title>
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/ex01.css">
-	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="css/ex00.css">
 	<script src="./script.js"></script>
 	<script src="./jquery.js"></script>
 	<style id="CSSInput"></style>
 </head>
 <body>
+
 	<div class="top-menu">
 		<a href="index.html">
-			<div><img src="img/home.png"></div>
+			<div><img src="home.png"></div>
 		</a>
 		<a href="bases_html.html">
-			<div><img src="img/archibook.png"></div>
+			<div><img src="archibook.png"></div>
 		</a>
 		<a href="bases_css.html">
-			<div><img src="img/archibook2.png"></div>
+			<div><img src="archibook2.png"></div>
 		</a>
 		<a href="ex00.html">
-			<div><img src="img/moustique-fish.png"></div>
+			<div><img src="moustique-fish.png" style="opacity: 1;"></div>
 		</a>
 		<a href="ex01.html">
-			<div><img src="img/moustique-squirrel.png" style="opacity: 1;"></div>
+			<div><img src="moustique-squirrel.png"></div>
 		</a>
 		<a href="ex02.html">
-			<div><img src="img/moustique-bird.png"></div>
+			<div><img src="moustique-bird.png"></div>
 		</a>
 	</div>
 
 
 	<div class="text-center">
-		<h1>Shake it up!</h1>
-		<h2>Tu n'as encore rien vu en CSS</h2>
-		<h4>Recherche un peu du coté des animations et transitions en CSS...</h4>
+		<h1>Nu gaan we spelen!</h1>
+		<h4>
+			We spelen het spel van de 7 verschillen:
+			<br>Het voorbeeld staat rechts. Het linker deel is voor jou.
+			<br>Zorg ervoor dat je resultaat hetzelfde is als het voorbeeld!
+			<br>ps : als u volledig verloren bent,
+			<br>klik dan op een element en "inspect".
+		</h4>
 	</div>
 
 	<div class="flex">
@@ -45,15 +50,22 @@
 
 		<div id="Example-CSS" class="example white-box flex-3">
 
-			<div class="ctrl-container  flex-3">
+			<div class="ctrl-container flex-3">
 				<div class="ctrl">
 					<div class="title"><h3>HTML</h3></div>
 					<textarea class="input" id="UserHTML">
 <html>
 <div class="owl-lover">
-	<h1>L'<span class="ecureuille">écureuil</span> amoureuse & le <span class="moustique">Moustique</span> fuyant</h1>
-	<div contentEditable="true" class="squirrel"><img src="img/squirrellette.png"></div>
-	<div contentEditable="true" class="squirrellette"><img src="img/squirrel.png"></div>
+	<h1>Archimedes is</h1>
+	<h2>De mooiste</h2>
+	<h1>De sterkste</h1>
+	<h4>De grootste</h4>
+	<h5>De meest intelligente</h5>
+	<h6>De grappigste</h6>
+	<p>Maar bovenal houdt hij niet van water!</p>
+	<div contentEditable="true">
+		<img src="archiwater.png" class="wet">
+	</div>
 </div>
 </html>
 					</textarea>
@@ -62,46 +74,30 @@
 					<div class="title"><h3>CSS</h3></div>
 					<textarea class="input" id="UserCSS">.owl-lover
 {
-	font-size: 12px;
+	background-color: grey;
 	padding: 19px;
-	border: solid 1px;
+	color: pink;
 	border-color: #e2f9f1;
 	border-radius: 5px;
 	height: 50vh;
+	text-transform: uppercase;
+	text-decoration: underline;
 }
 .wet
 {
-	height: 84px;
-}
-.owl-lover .squirrellette{
-	animation : vertical 1.5s infinite;
-}
-@keyframes vertical{
-	0%{margin-top: 100px;}
-	50%{margin-top: 300px;}
-	100%{margin-top: 100px;}
-}
-.owl-lover .ecureuille{
-	animation: colors 2s infinite;
-}
-@keyframes colors{
-	0%{color: black}
-	16%{color:grey}
-	33%{color: white}
-	66%{color: grey}
-	100%{color: black}
+	height: 42px;
 }
 					</textarea>
 				</div>
 			</div>
 
-			<div class="btn-refresh-container  flex-1">
+			<div class="btn-refresh-container flex-1">
 				<button onclick="updateHTMLWithCSS()" class="btn-refresh">
 				</button>
 			</div>
 
-			<div class="result-container">
-				<div class="title"><h3>Résultat</h3></div>
+			<div class="result-container flex-1">
+				<div class="title"><h3>Resultaat</h3></div>
 				<div class="result-area">
 					<div id="UserResult"></div>
 				</div>
@@ -109,25 +105,30 @@
 
 		</div>
 
+
 		<div class="white-box flex-1">
 			<div class="ctrl-container">
 				<div class="ctrl flex">
-					<div class="title"><h3>Exemple</h3></div>
+					<div class="title"><h3>Origineel</h3></div>
 					<div class="textarea exemple">
-						<h1>L'<span class="ecureuille">écureuil</span> amoureuse & le <span class="moustique">Moustique</span> fuyant</h1>
-						<div class="squirrel"><img src="img/squirrellette.png"></div>
-						<div class="squirrellette"><img src="img/squirrel.png"></div>
+						<h1>Archimède is</h1>
+						<h2>De mooiste</h2>
+						<h3>De sterkste</h3>
+						<h4>De grootste</h4>
+						<h5>De meest intelligente</h5>
+						<h6>De grappiste</h6>
+						<p class="angry">Maar bovenal houdt hij niet van water!</p>
+						<div><img src="archiwater.png"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<div class="footer">
 		<div class="flex">
-			<a href="ex00.html"><img src="img/arrow-fantasy-prev.png" class="arrow"></a>
-			<a href="ex02.html"><img src="img/arrow-fantasy.png" class="arrow"></a>
+			<a href="bases_css.html"><img src="arrow-fantasy-prev.png" class="arrow"></a>
+			<a href="ex01.html"><img src="arrow-fantasy.png" class="arrow"></a>
 		</div>
 	</div>
 

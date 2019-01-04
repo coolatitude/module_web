@@ -1,46 +1,4 @@
-// time before reset of session
-var expires = 20;
-
-var imgpath = "/img/";
-
-var locale = "fr";
-
-var currentPage = 4;
-
 var visited;
-
-var pages = [
-    {
-        ref: "home",
-        image: "home.png",
-        exercice_type: 0
-    },
-    {
-        ref: "bases_html",
-        image: "archibook.png",
-        exercice_type: 0
-    },
-    {
-        ref: "bases_css",
-        image: "archibook2.png",
-        exercice_type: 2
-    },
-    {
-        ref: "ex00",
-        image: "moustique-fish.png",
-        exercice_type: 2
-    },
-    {
-        ref: "ex01",
-        image: "moustique-squirrel.png",
-        exercice_type: 2
-    },
-    {
-        ref: "ex02",
-        image: "moustique-bird.png",
-        exercice_type: 0
-    }
-];
 
 function setCookie(cname, cvalue) {
     var d = new Date();
@@ -83,7 +41,7 @@ function show_menu() {
         if (pgs[x] == 1) {
             i = $('<div>');
             n = $('<img>', {
-                src: imgpath + pages[x].image
+                src: pages[x].image
             });
             i.append(n);
             n = $('<a>', {
@@ -108,7 +66,10 @@ function addEventListener() {
         $("#UserResult").html($("#UserHTML").val());
     }
     else if (x == 1) {
-        
+        $("#UserHTML").on("input", function (){
+            $("#UserResult").html($("#UserHTML").val());
+        });
+        $("#UserResult").html($("#UserHTML").val());
     }
 }
 
@@ -130,12 +91,12 @@ function show_content() {
     let path = pages[currentPage].ref;
     $.ajax({
         type: "GET",
-        url: "html/" + path + ".html",
+        url: path + ".html",
         success: (function(data) {
             $("#page").html(data);
             $.ajax({
                 type: "GET",
-                url: "lang/" + locale + "/" + path + ".lang",
+                url: locale + "/" + path + ".lang",
                 success: (function(data) {
                     let elem = $('[data-text]');
                     let text = data.split("<text>");
@@ -165,10 +126,10 @@ function show_content() {
 }
 
 function changeLocale_content() {
-    let path = pages[currentPage];
+    let path = pages[currentPage].ref;
     $.ajax({
         type: "GET",
-        url: "lang/" + locale + "/" + path,
+        url: locale + "/" + path + ".lang",
         success: (function(data) {
             let elem = $('[data-text]');
             let text = data.split("<text>");

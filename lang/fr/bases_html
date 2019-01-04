@@ -20,16 +20,15 @@ Tu les découvriras petit à petit...
 <text>Essayons !
 <text>Observe bien le code et le résultat.
 <text>Puis, essaie par exemple :
-	<br>de mettre les balises html
-	<br>de modifier le lien
-	<br>de changer la balise de titre "h3" en "h1"
-	<br>d'ajouter un paragraphe
-	<br>de changer la page à laquelle le lien renvoie
-	<br>d'ajouter un bouton (balise 'button')
-		<text>À chaque changement que tu feras dans le code, il te faudra cliquer sur la flèche 'refresh' pour voir le résultat
-		<text>Attention, si tu rafraîchis la page, toutes tes modifications dans le code disparaîtront.
-<text>
-	<head>
+	de mettre les balises html
+	de modifier le lien
+	de changer la balise de titre "h3" en "h1"
+	d'ajouter un paragraphe
+	de changer la page à laquelle le lien renvoie
+	d'ajouter un bouton (balise 'button')
+<text>À chaque changement que tu feras dans le code, il te faudra cliquer sur la flèche 'refresh' pour voir le résultat
+<text>Attention, si tu rafraîchis la page, toutes tes modifications dans le code disparaîtront.
+<text><head>
 	</head>
 	<body>
 		<div>
@@ -39,7 +38,7 @@ Tu les découvriras petit à petit...
 			<p>Les humains sont <strong>exaspérants</strong>.</p>
 			<a href="https://www.youtube.com/watch?v=KLI46yMdtmU" target="_blanck">Même si ils sont parfois hilarants...</a>
 			<div contentEditable="true">
-				<img src="img/archibook.png">
+				<img src="archibook.png">
 			</div>
 		</div>
 	</body>

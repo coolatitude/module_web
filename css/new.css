@@ -116,3 +116,11 @@ textarea, .textarea {
 	position: absolute;
 	bottom: 0;
 }
+
+
+
+
+/* TESTS */
+p {
+	white-space: pre-wrap;
+}

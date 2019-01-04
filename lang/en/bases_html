@@ -1,0 +1,46 @@
+<text>First, the basics!
+<text>"HTML is the background."
+<text>In HTML, we use tags to structure a page. These tags form blocks and indicate what these blocks are or do.
+
+Tags always go in pairs: an opening tag and a closing tag.
+For example <div> opens a block and </div> closes it.
+
+There are 3 pairs of fundamental tags:
+	<html></html> : we always start with the tag <html> which announces that the rest will be html code, and we close everything at the end with </html>.
+	<head></head> contains metadata, i. e. data that will not be readable on the web page, but is important for the web browser.
+	<body></body> contains everything that will be visible on the web page.
+
+Then the most common is the <div></div> tag, which simply allows you to structure the page. Like when you structure a text by creating paragraphs.
+Then, the tag <a href="url of a web page"></a> allows to insert a link to another web page.
+Finally, the tag <img src="image.jpg">, as its name indicates, allows you to insert an image.
+
+There are many other tags.
+You can try for example <h1></h1> or <p></p> or even <strong></strong>
+You will discover them little by little...
+<text>Let's try!
+<text>Observe the code and the result carefully.
+<text>Then, try for example :
+	to add the HTML tags
+	to modify the link
+	to change the title tag "h3" to "h1".
+	to add a paragraph
+	to change the page to which the link refers
+	add a button ('button' tag)
+<text>With each change you make in the code, you will need to click on the'refresh' arrow to see the result
+<text>Be careful, if you refresh the page, all your changes in the code will disappear.
+<text><head>
+	</head>
+	<body>
+		<div>
+			<h3>Archimède, this hero</h3>
+			<p>Archimedes is the true spiritual master of Merlin. Without him, Merlin would be nothing.</p>
+			<p>He occasionally tries to educate Mosquitoes. But this kid doesn't understand anything about anything.</p>
+			<p>Humans are <strong>infuriating</strong>.</p>
+			<a href="https://www.youtube.com/watch?v=KLI46yMdtmU" target="_blanck">Even if they are sometimes hilarious....</a>
+			<div contentEditable="true">
+				<img src="archibook.png">
+			</div>
+		</div>
+	</body>
+<text>Result
+<text>Simple, isn't it?
