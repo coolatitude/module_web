@@ -1,0 +1,13 @@
+<text>Shake it up!
+<text>Tu n'as encore rien vu en CSS
+<text>Recherche un peu du coté des animations et transitions en CSS...
+<text><html>
+<div class="owl-lover">
+	<h1>L'<span class="ecureuille">écureuil</span> amoureuse & le <span class="moustique">Moustique</span> fuyant</h1>
+	<div contentEditable="true" class="squirrel"><img src="img/squirrellette.png"></div>
+	<div contentEditable="true" class="squirrellette"><img src="img/squirrel.png"></div>
+</div>
+</html>
+<text>Résultat
+<text>Exemple
+<text>L'<span class="ecureuille">écureuil</span> amoureuse & le <span class="moustique">Moustique</span> fuyant

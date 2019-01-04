@@ -5,13 +5,11 @@ var imgpath = "/img/";
 
 var locale = "fr";
 
-var pages = ["home", "bases_html", "bases_css", "ex00", "ex01", "ex02"];
-
-var currentPage = 2;
+var currentPage = 4;
 
 var visited;
 
-var menu_pages = [
+var pages = [
     {
         ref: "home",
         image: "home.png",
@@ -35,7 +33,7 @@ var menu_pages = [
     {
         ref: "ex01",
         image: "moustique-squirrel.png",
-        exercice_type: 0
+        exercice_type: 2
     },
     {
         ref: "ex02",
@@ -85,7 +83,7 @@ function show_menu() {
         if (pgs[x] == 1) {
             i = $('<div>');
             n = $('<img>', {
-                src: imgpath + menu_pages[x].image
+                src: imgpath + pages[x].image
             });
             i.append(n);
             n = $('<a>', {
@@ -98,7 +96,7 @@ function show_menu() {
 }
 
 function addEventListener() {
-    let x = menu_pages[currentPage].exercice_type;
+    let x = pages[currentPage].exercice_type;
     if (x == 2) {
         $("#UserCSS").on("input", function (){
             $("#CSSInput").html($("#UserCSS").val());
@@ -129,7 +127,7 @@ function show_content() {
         visited = visited + "0";
     }
     visited = visited.split(".");
-    let path = pages[currentPage];
+    let path = pages[currentPage].ref;
     $.ajax({
         type: "GET",
         url: "html/" + path + ".html",
