@@ -1,3 +1,0 @@
-alias pb_en='cd ~/petit_bain && ./petit_bain en'
-alias pb_fr='cd ~/petit_bain && ./petit_bain fr'
-alias pb_nl='cd ~/petit_bain && ./petit_bain nl'
