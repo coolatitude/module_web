@@ -1,8 +1,24 @@
-let textarea = $("#texte");
+let langR = $("#langR");
+let langL = $("#langL");
 let select = $("#pageSelect");
+let R = "right"
+  , L = "left";
+let locR, locL;
 let path;
 
 function main() {
+    for (let i of languages){
+        $("#languagesL").append($("<img>", {
+            onclick : "changeLocale('" + i.locale + "', '" + L + "');",
+            class : "locale",
+            src : "flag_" + i.locale +".png"
+        }));
+        $("#languagesR").append($("<img>", {
+            onclick : "changeLocale('" + i.locale + "', '" + R + "');",
+            class : "locale",
+            src : "flag_" + i.locale +".png"
+        }));
+    }
     for (let i = 0; i < pages.length; i++) {
         select.append($('<option>', {
             value: i,
@@ -12,42 +28,71 @@ function main() {
     select.on("change", function() {
         showPage(this.value);
     });
-    showPage(0);
+    changeLocale("fr", "right");
+    changeLocale("en", "left");
 }
 
 function save() {
-    console.log("ERROR");
-}
-
-function changeLocale(loc) {
-    locale = loc;
-    showPageText(select.val());
-}
-
-function showPage(page){
-    path = pages[page].ref;
-    $.ajax({
-        type: "GET",
-        url: "/" + path + ".html",
-        success: (function(data) {
-            $("#html").html(data);
-            showPageText(page);
-        }) 
+    let x = $("#langR").children();
+    let text = "";
+    for (let xi of x) {
+        text += "<text>" + $(xi).val();
+    }
+    console.log(text);
+    $.post({
+        url: "save/" + pages[select.val()].ref + "/" + "en",
+        data: {
+            content : text
+            },
+        success: (function (data){
+            console.log(data);
+        })
     });
 }
 
-function showPageText(page) {
+function changeLocale(loc, side) {
+    if (side == R) {
+        locR = loc;
+        showPageText(select.val(), side);
+        let x = $("#languagesR").children();
+        for (let i = 0; i < x.length; i++){
+            if (loc == languages[i].locale)
+                $(x[i]).hide();
+            else
+                $(x[i]).show();
+        }
+    } else if (side == L) {
+        locL = loc;
+        showPageText(select.val(), side);
+        let x = $("#languagesL").children();
+        for (let i = 0; i < x.length; i++){
+            if (loc == languages[i].locale)
+                $(x[i]).hide();
+            else
+                $(x[i]).show();
+        }
+    }
+}
+
+function showPage(page) {
+    showPageText(page, "right");
+    showPageText(page, "left");
+}
+
+function showPageText(page, side) {
     path = pages[page].ref;
     $.ajax({
         type: "GET",
-        url: locale + "/" + path + ".lang",
+        url: (side == "right" ? locR : locL) + "/" + path + ".lang",
         success: (function(data) {
+            let lang = (side == R ? langR : langL);
             let text = data.split("<text>");
             text = text.slice(1);
-            textarea.html("");
+            lang.html("");
             for (let i = 0; i < text.length; i++) {
-                textarea.append($('<textarea>', {
-                    html : text[i]
+                lang.append($('<textarea>', {
+                    text: text[i],
+                    readonly : (side == R ? false : true)
                 }));
             }
         }

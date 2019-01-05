@@ -37,3 +37,21 @@ var pages = [
         exercice_type: 0
     }
 ];
+
+var languages = [
+    {
+        locale: "en",
+        title: "english",
+        image: "falg_en.png"
+    },
+    {
+        locale: "fr",
+        title: "french",
+        image: "falg_fr.png"
+    },
+    {
+        locale: "de",
+        title: "deutsh",
+        image: "falg_de.png"
+    }
+];
