@@ -106,7 +106,7 @@ function show_content() {
                     addEventListener();
                 }
                 )
-            })
+            });
         }
         )
     });

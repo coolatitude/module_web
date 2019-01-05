@@ -6,7 +6,7 @@
 #    By: pvanderl <pvanderl@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/03 20:53:15 by pvanderl          #+#    #+#              #
-#    Updated: 2019/01/04 21:09:44 by pvanderl         ###   ########.fr        #
+#    Updated: 2019/01/05 12:17:59 by pvanderl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ class requestHandler(BaseHTTPRequestHandler):
         if self.path == "/":
             self.path = "/index.html"
         elif self.path.startswith("/editor") and self.path.endswith("1919"):
-            self.path = "dev/editor.html"
+            self.path = "/editor.html"
         try:
             mimetype = ''
             if self.path.endswith(".html"):

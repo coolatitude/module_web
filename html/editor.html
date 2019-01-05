@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>Petit Bain-Admin</title>
+        <link rel="icon" href="logo19.png">
+        <script src="./global_data.js"></script>
+        <script src="/jquery.js"></script>
+        <link rel="stylesheet" href="./editor.css">
+    </head>
+    <body>
+        <div class="flex">
+            <select id="pageSelect"></select>
+            <div id="languages">
+                <img onclick="changeLocale('en');" class="locale" src="flag_en.png">
+                <img onclick="changeLocale('de');" class="locale" src="flag_de.png">
+                <img onclick="changeLocale('fr');" class="locale" src="flag_fr.png">
+            </div>
+        </div>
+        <div id="comparator">
+            <div id="html"></div>
+            <div id="texte"></div>
+        </div>
+        <footer class="flex">
+            <button onclick="save();">save</button>
+        </footer>
+        <script src="./editor.js"></script>
+    </body>
+</html>
