@@ -3,7 +3,7 @@ var expires = 20;
 
 var locale = "en";
 
-var currentPage = 1;
+var currentPage = 0;
 
 var pages = [
     {

@@ -32,11 +32,11 @@ Easy as pie!
 <text>Let's try!
 <text>Observes the code and the result well.
 <text>Then, try for example:
-			<br>to change the color of the text
-			<br>to change the background color of the title
-			<br>to underline only the 2nd sentence
-			<br>to center the text
-			<br>to restore Archimedes to the place (see the property "transform')
+	to change the color of the text
+	to change the background color of the title
+	to underline only the 2nd sentence
+	to center the text
+	to restore Archimedes to the place (see the property "transform')
 <text>Each time you make a change in the code, you will have to click on the'refresh' arrow to see the result
 <text>Caution, if you refresh the page, all your changes in the code will disappear.
 <text><html>

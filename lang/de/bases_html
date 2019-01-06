@@ -1,42 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset=utf-8>
-	<title>Petit Bain</title>
-	<link rel="stylesheet" href="css/main.css">
-	<script src="jquery.js"></script>
-	<style id="CSSInput"></style>
-</head>
-<body>
-	<div class="top-menu">
-		<a href="index.html">
-			<div><img src="home.png"></div>
-		</a>
-		<a href="bases_html.html">
-			<div><img src="archibook.png" style="opacity: 1;"></div>
-		</a>
-		<a href="bases_css.html">
-			<div><img src="archibook2.png"></div>
-		</a>
-		<a href="ex00.html">
-			<div><img src="moustique-fish.png"></div>
-		</a>
-		<a href="ex01.html">
-			<div><img src="moustique-squirrel.png"></div>
-		</a>
-		<a href="ex02.html">
-			<div><img src="moustique-bird.png"></div>
-		</a>
-	</div>
-
-	<div class="text-center">
-		<h2>Eerst de basis!</h2>
-		<h1>“HTML is het fundament”</h1>
-	</div>
-
-	<div class="intro-container">
-	<textarea readonly class="textarea-intro">
-In HTML gebruiken we tags om een pagina te structureren. Deze tags vormen blokken en geven aan wat deze blokken zijn of doen.
+<text>Eerst de basis!
+<text>“HTML is het fundament”
+<text>In HTML gebruiken we tags om een pagina te structureren. Deze tags vormen blokken en geven aan wat deze blokken zijn of doen.
 
 Tags gaan altijd in paren: een openingstag en een sluitingstag.
 Bijvoorbeeld <div> opent een blok en </div> sluit het.
@@ -53,31 +17,18 @@ Tot slot, de tag <img src="image.jpg">, zoals de naam al aangeeft, staat je toe 
 Er zijn nog veel meer tags.
 U kunt bijvoorbeeld <h1></h1></h1> of <p></p> of zelfs <strong></strong> proberen.
 U zult ze beetje bij beetje ontdekken.....
-	</textarea>
-	</div>
-
-	<div class="text-center">
-		<h2>Laten we het eens proberen!</h2>
-		<p>Bekijk de code goed en zie het resultaat.</p>
-		<p>Probeer dan bijvoorbeeld:
-			<br>om html-tags toevoegen
-			<br>om een link wijzigen
-			<br>om de titel label "h3" te veranderen in "h1".
-			<br>om een alinea toevoegen
-			<br>om de pagina waarnaar de link verwijst te wijzigen
-			<br>om een knop ('button' tag) toe te voegen
-		</p>
-		<p>Bij elke wijziging die je in de code aanbrengt, moet je op de 'refresh' knop klikken om het resultaat te zien.</p>
-		<p>Pas op, als je de pagina ververst, zullen al de wijzigingen in de code verdwijnen.</p>
-	</div>
-
-	<div id="Example-CSS" class="example white-box">
-
-		<div class="ctrl-container">
-			<div class="ctrl">
-				<div class="title"><h3>HTML</h3></div>
-				<textarea class="input" id="UserHTML">
-	<head>
+<text>Laten we het eens proberen!
+<text>Bekijk de code goed en zie het resultaat.
+<text>Probeer dan bijvoorbeeld:
+	om html-tags toevoegen
+	om een link wijzigen
+	om de titel label "h3" te veranderen in "h1".
+	om een alinea toevoegen
+	om de pagina waarnaar de link verwijst te wijzigen
+	om een knop ('button' tag) toe te voegen
+<text>Bij elke wijziging die je in de code aanbrengt, moet je op de 'refresh' knop klikken om het resultaat te zien.
+<text>Pas op, als je de pagina ververst, zullen al de wijzigingen in de code verdwijnen.
+<text><head>
 	</head>
 	<body>
 		<div>
@@ -91,49 +42,4 @@ U zult ze beetje bij beetje ontdekken.....
 			</div>
 		</div>
 	</body>
-				</textarea>
-			</div>
-
-		</div>
-
-		<div class="btn-refresh-container">
-			<button onclick="updateHTML()" class="btn-refresh">
-			</button>
-		</div>
-
-		<div class="result-container">
-			<div class="title"><h3>Resultaat</h3></div>
-			<div class="result-area textarea">
-				<div id="UserResult"></div>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="text-center">
-		<h2>Makkelijk, toch?</h2>
-	</div>
-
-	<div class="footer">
-		<div class="flex">
-			<div class="arrow"></div>
-			<a href="bases_css.html"><img src="arrow-fantasy.png" class="arrow"></a>
-		</div>
-	</div>
-
-
-	<script type="text/javascript">
-		function	updateHTML()
-		{
-			let input = document.getElementById("UserHTML").value;
-			document.getElementById("UserResult").innerHTML = input;
-		}
-		updateHTML()
-		$(window).bind('beforeunload', function(){
-		  	return 'Are you sure you want to leave?';
-		});
-
-	</script>
-
-</body>
-</html>
+<text>Resultaat

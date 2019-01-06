@@ -38,7 +38,6 @@ function save() {
     for (let xi of x) {
         text += "<text>" + $(xi).val();
     }
-    console.log(text);
     $.post({
         url: "save/" + pages[select.val()].ref + "/" + locR,
         data: {

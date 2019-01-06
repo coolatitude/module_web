@@ -147,6 +147,14 @@ function main() {
         window.location.href = "http://localhost:8000";
     setCookie("visited", "");
     show_content();
+
+    for (let i of languages){
+        $("#languages").append($("<img>", {
+            onclick : "changeLocale('" + i.locale + "');",
+            class : "locale",
+            src : "flag_" + i.locale +".png"
+        }));
+    }
 }
 
 function nextPage() {
@@ -159,6 +167,7 @@ function previousPage() {
 
 function openPageNumber(nb) {
     currentPage = nb;
+    window.scrollTo(0,0);
     show_content();
 }
 
