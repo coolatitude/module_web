@@ -1,0 +1,29 @@
+INFORMATIONS FOR DEVELOPPERS:
+
+launch :
+	type the following commands : 
+		python launch.py
+		open http://localhost:8000
+path:
+	no need to specify the folder name.
+		False : href="../img/image.png"
+		Right : href="img.png"
+	the images shall be in the /img folder.
+	the .css files shall be in the /css folder.
+	the .js files shall be in the /js folder.
+	the .html files shall be in the /html folder.
+	the languages files shall be in the /lang/[locale] folder
+
+norms:
+	JS:
+		all the global variables are in the global_data.js file
+		the code is in the global.js file
+		pick attention: modify it at your own risks!
+	html:
+		add a "data-text" tag everywhere you need to put text
+	text:
+		add a "<text>" before each text part 
+	CSS:
+		the CSS shall be written in one file 
+		use comments to separate the differents pages
+		use identifiers as "page1-title" or "ex04-hint"
