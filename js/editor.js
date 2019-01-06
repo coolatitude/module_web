@@ -40,7 +40,7 @@ function save() {
     }
     console.log(text);
     $.post({
-        url: "save/" + pages[select.val()].ref + "/" + "en",
+        url: "save/" + pages[select.val()].ref + "/" + locR,
         data: {
             content : text
             },
@@ -52,6 +52,7 @@ function save() {
 
 function changeLocale(loc, side) {
     if (side == R) {
+        $("#titles > :last").html(languages[languages.findIndex(e => e.locale === loc)].title);
         locR = loc;
         showPageText(select.val(), side);
         let x = $("#languagesR").children();
@@ -62,6 +63,7 @@ function changeLocale(loc, side) {
                 $(x[i]).show();
         }
     } else if (side == L) {
+        $("#titles > :first").html(languages[languages.findIndex(e => e.locale === loc)].title);
         locL = loc;
         showPageText(select.val(), side);
         let x = $("#languagesL").children();
