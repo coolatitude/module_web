@@ -3,51 +3,6 @@ html {
 	background-color:#26d59a21;
 }
 
-/*menu {
-	position: fixed;
-	top: 0px;
-	display: flex;
-	flex-direction: row;
-	z-index: 100;
-	padding: 15px;
-}
-
-#menu_content
-{
-	width: 150px;
-	text-align: left;
-	line-height: 1.8;
-	background-color:grey;
-	padding: 5px;
-	border-radius: 8px;
-}
-
-menu img
-{
-	margin: 10px;
-	width: 40px;
-	height: 40px;
-}
-
-menu a:link, menu a:visited, menu a:hover
-{
-	color: white;
-	text-decoration: none;
-}
-
-#menu_visible
-{
-	display: flex;
-	flex-direction: row;
-	background-color: grey;
-	justify-content: center;
-	height: 60px;
-	width: 140px;
-	opacity: 1.8;
-	border-radius: 8px;
-}
-*/
-
 .white-box
 {
 	background-color: white;
