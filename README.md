@@ -14,3 +14,4 @@ the dev logic:
 - then this js will load the html, wich has no text, of the current page.
 - it'll fill the html with the parsed text from lang/$Locale$/
 
+. the css isn't updated for all screen formats
