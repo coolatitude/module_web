@@ -55,29 +55,34 @@ function show_menu() {
 
 function addEventListener() {
     let x = pages[currentPage].exercice_type;
+    $(".input").keydown(function(e) {
+        if (e.keyCode == 9) {
+            var start = this.selectionStart;
+            var end = this.selectionEnd;
+            var $this = $(this);
+            var value = $this.val();
+            $this.val(value.substring(0, start)
+                        + "\t"
+                        + value.substring(end));
+            this.selectionStart = this.selectionEnd = start + 1;
+            e.preventDefault();
+        }
+    });
     if (x == 2) {
-        $("#UserCSS").on("input", function (){
+        $("#UserCSS").on("input", function() {
             $("#CSSInput").html($("#UserCSS").val());
         });
-        $("#UserHTML").on("input", function (){
+        $("#UserHTML").on("input", function() {
             $("#UserResult").html($("#UserHTML").val());
         });
         $("#CSSInput").html($("#UserCSS").val());
         $("#UserResult").html($("#UserHTML").val());
-    }
-    else if (x == 1) {
-        $("#UserHTML").on("input", function (){
+    } else if (x == 1) {
+        $("#UserHTML").on("input", function() {
             $("#UserResult").html($("#UserHTML").val());
         });
         $("#UserResult").html($("#UserHTML").val());
     }
-}
-
-function updateHTML(x) {
-    let css = document.getElementById("UserCSS").value;
-    let HTML = document.getElementById("UserHTML").value;
-    $("#CSSInput").html(css);
-    document.getElementById("UserResult").innerHTML = HTML;
 }
 
 function show_content() {
@@ -148,11 +153,11 @@ function main() {
     setCookie("visited", "");
     show_content();
 
-    for (let i of languages){
+    for (let i of languages) {
         $("#languages").append($("<img>", {
-            onclick : "changeLocale('" + i.locale + "');",
-            class : "locale",
-            src : "flag_" + i.locale +".png"
+            onclick: "changeLocale('" + i.locale + "');",
+            class: "locale",
+            src: "flag_" + i.locale + ".png"
         }));
     }
 }
@@ -167,7 +172,7 @@ function previousPage() {
 
 function openPageNumber(nb) {
     currentPage = nb;
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     show_content();
 }
 
